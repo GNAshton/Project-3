@@ -1,2 +1,5 @@
 # Project-3
  
+The National Creatives Expo is a fictitious three-day festival for creatives in all different fields to come together and celebrate their work, advocate for better treatment, wages, hours, unionization, and more. This website will display all of the important information about the event. This includes information about the sponsors and where the proceeds will go, each of the events throughout the day, the purpose of the festival, and a shop that will help benefit the causes. 
+
+The branding for the website is made from scratch, and also combines the branding from the main sponsors, IATSE and CWA (Communication Workers of America). The branding for the event includes bright, bold colors, while still maintaining a professional look appropriate for an event with various types of artists. 
