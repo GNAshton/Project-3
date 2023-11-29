@@ -11,3 +11,69 @@ html {
 body {
     min-height: 100%;
 }
+
+.homepage {
+    background-color: #80554A;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a:any-link {
+    text-decoration: none;
+}
+
+/* Navbar */
+
+nav {
+    height: 30vh;
+    max-width: 10vw;
+    margin: 10px 0px 0px 0px;
+    position: fixed;
+}
+
+.navelement {
+    padding: 0px 100px 10px 40px;
+}
+
+.navtext {
+    opacity: 100%;
+    font-family: source-code-pro, monospace;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18pt;
+    color: #FEE200;
+    padding-right: 5px;
+}
+
+.navlogo {
+    width: 150px;
+}
+
+.navelement > a:active {
+    border: 3px solid #FEE200;
+}
+
+.navelement > a:hover {
+    border-color: #FEE200;
+    border-width: 3px;
+    border-style: none solid solid none;
+    transition-duration: 0.2s;
+}
+
+/* Page One */
+
+#opening1 {
+    
+    font-family: rig-sans, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 80px;
+    color: white;
+}
+
+.test {
+    position: relative;
+    left: 20vw;
+    top: 30vh;
+}
