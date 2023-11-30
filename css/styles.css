@@ -12,13 +12,6 @@ body {
     min-height: 100%;
 }
 
-.homepage {
-    background-color: #80554A;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
 a:any-link {
     text-decoration: none;
 }
@@ -26,13 +19,18 @@ a:any-link {
 /* Navbar */
 
 nav {
-    height: 30vh;
+    display: flex;
+    align-content: space-between;
     max-width: 10vw;
-    margin: 10px 0px 0px 0px;
-    position: fixed;
+    margin: 30px 0px 30px 0px;
+    padding-left: 20vw;
 }
 
 .navelement {
+    padding: 0px 100px 10px 90px;
+}
+
+.navlogobox {
     padding: 0px 100px 10px 40px;
 }
 
@@ -51,29 +49,188 @@ nav {
 }
 
 .navelement > a:active {
-    border: 3px solid #FEE200;
+    border-color: #FEE200;
+    border-width: 4px;
+    border-style: none solid solid none;
 }
 
 .navelement > a:hover {
     border-color: #FEE200;
-    border-width: 3px;
+    border-width: 4px;
     border-style: none solid solid none;
-    transition-duration: 0.2s;
+    transition-duration: 0.3s;
 }
 
 /* Page One */
 
-#opening1 {
-    
-    font-family: rig-sans, sans-serif;
-    font-weight: 900;
+.homepage {
+    background-color: #80554A;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.homepage2 {
+    background-color: #EE2E24;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.homepage3 {
+    background-color: #FEE200;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.homepage4 {
+    background-color: #ff4212;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#openingheader {
+    font-family: source-code-pro, monospace;
+    font-weight: 700;
     font-style: normal;
-    font-size: 80px;
+    font-size: 60px;
+    width:60vw;
+    text-align: right;
     color: white;
 }
 
-.test {
+.NCE1 {
+    width: 60vw;
+    background-color: #FEE200;
+    color: #ff4212;
+    font-family: rig-sans, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 100px;
+    text-align: right;
+    padding-right: 20px;
+}
+
+#NCE2 {
+    width: 60vw;
+    background-color: #EE2E24;
+    color: #FEE200;
+    font-family: rig-sans, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 100px;
+    text-align: right;
+    padding-right: 20px;
+}
+
+#openingtext {
+    margin: 20px 0 0 30px;
+    width: 60vw;
+    color: white;
+    font-family: source-code-pro, monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+.arrowbox {
     position: relative;
-    left: 20vw;
-    top: 30vh;
+    left: 50vw;
+    margin-top: 80px;
+}
+
+.downarrow {
+    color: white;
+    width: 20px;
+}
+
+.downarrow:hover {
+    animation-name: arrowHover;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+/* Page Two */
+
+.homeSectionHead {
+    font-family: rig-sans, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 200px;
+    padding: 20vh 0 0 10vw;
+}
+
+.homeSectionHead > a {
+    color: white;
+}
+
+.homeSectionHead {
+    font-family: rig-sans, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 200px;
+    color: white;
+    padding: 20vh 0 0 10vw;
+}
+
+.homeSectionHead2 {
+    font-family: rig-sans, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 200px;
+    color: black;
+    padding: 20vh 0 0 10vw;
+}
+
+.homeSectionHead2 > a {
+    color: black;
+}
+
+.homeSectionDesc {
+    color: white;
+    font-family: source-code-pro, monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1.3;
+    padding-left: 10.7vw;
+    max-width: 60vw;
+}
+
+.homeSectionDesc2 {
+    color: black;
+    font-family: source-code-pro, monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1.3;
+    padding-left: 10.7vw;
+    max-width: 60vw;
+}
+
+
+
+
+/* Animations */
+
+@keyframes arrowHover{
+    50% {
+        transform: translate(0, -5px)
+    }
+    70% {
+        transform: translate(0, -5px)
+    }
+    90% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
 }
