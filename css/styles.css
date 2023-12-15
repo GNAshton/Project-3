@@ -22,26 +22,25 @@ a:any-link {
 nav {
     display: flex;
     position: fixed;
-    justify-content:center;
-    width: 100vw;
+    justify-content: left;
     margin: 30px 0px 30px 0px;
     z-index: 999;
 }
 
 .navbackground {
     position: fixed;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,.3), rgba(0,0,0,0));
+    background-image: linear-gradient(to bottom, rgba(0,0,0,.5), rgba(0,0,0,0));
     top: 0vh;
     height: 90px;
     width: 100vw;
 }
 
 .navelement {
-    padding: 0px 100px 10px 90px;
+    padding: 0px 20px 10px 90px;
 }
 
 .navlogobox {
-    padding: 0px 100px 10px 40px;
+    padding: 0px 40px 10px 40px;
 }
 
 .navtext {
@@ -144,6 +143,18 @@ nav {
     margin-top: 18vh;
     text-align: right;
     color: white;
+}
+
+#openDate {
+    font-family: source-code-pro, monospace;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 100px;
+    color: white;
+    position: absolute;
+    line-height: 1.2;
+    top: 28vh;
+    left: 65vw;
 }
 
 .NCE1 {
@@ -305,9 +316,10 @@ nav {
 .partnerInfo {
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: rgb(235, 235, 235);
     margin-right: 3%;
-    width: 25%;
+    width: 30%;
+    border: 15px double #ff98c6;
 
 }
 
@@ -333,6 +345,86 @@ nav {
 
 /* Store Page */
 
+#shopHome {
+    background-color: #ff4212;
+    height: 100vh;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#storeBox {
+    display: flex;
+    flex-direction: row;
+    margin: 3vh 5vw 0 15vw;
+}
+
+.storeItem {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(235, 235, 235);
+    margin-right: 3%;
+    width: 30%;
+    border: 15px double #ff4212;
+}
+
+.storeImg {
+    padding: 2vh 1vw 3vh 1vw;
+    width: 95%;
+    align-self: center;
+}
+
+.itemTitle {
+    font-family: source-code-pro, monospace;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 36px;
+    color:#ff4212;
+    text-transform: uppercase;
+    padding: 2vh 0 0 0vw;
+    align-self: center;
+}
+
+.itemPrice {
+    font-family: source-code-pro, monospace;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    color:black;
+    align-self: center;
+}
+
+.addToCart{
+    font-family: source-code-pro, monospace;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    color: #ff4212;
+    align-self: center;
+    padding: 0 8px 2px 0;
+    margin: 4% 0 7% 0;
+
+    border-style: none solid solid none;
+    border-width: 4px;
+    border-color: rgb(235, 235, 235);
+}
+
+.addToCart:hover {
+    cursor: pointer;
+    font-weight: 800;
+    border-color: #ff4212;
+    transition-duration: 0.2s;
+}
+
+/* Contact */
+
+#contactHome {
+    background-color: rgb(235, 235, 235);
+    height: 100vh;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
 
 
 
@@ -375,4 +467,81 @@ nav {
         opacity: 100%;
         transform: translate(0,0);
     }
+}
+
+@media screen and (max-width: 750px){
+    * {
+        font-size: 75%;
+    }
+
+    body {
+        background-color: #ff4212;
+    }
+
+    .navelement {
+        padding: 0px 10px 10px 50px;
+    }
+
+    #shopHome {
+        background-color: #ff4212;
+        max-width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pageHeader {
+        font-family: rig-sans, sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        font-size: 150px;
+        text-align: center;
+        color: white;
+        padding: 10vh 0 0 0;
+    }
+    
+    .pageDescription {
+        color: white;
+        font-family: source-code-pro, monospace;
+        font-weight: 300;
+        font-style: normal;
+        align-self: center;
+        text-align: left;
+        font-size: 20px;
+        line-height: 1.3;
+        max-width: 90vw;
+        margin-left: -10vw;
+    }
+    
+    #storeBox {
+        display: flex;
+        flex-direction: column;
+        margin: 0 5vw 0 3vw;
+        align-items: center;
+    }
+
+    .storeItem {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(235, 235, 235);
+        margin: 2vh 0 3vh 0;
+        width: 90%;
+        border: 15px double #ff4212;
+    }
+
+    .addToCart{
+        font-family: source-code-pro, monospace;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 20px;
+        color: #ff4212;
+        align-self: center;
+        padding: 0 8px 2px 0;
+        margin: 4% 0 3% 0;
+    
+        border-style: none solid solid none;
+        border-width: 4px;
+        border-color: rgb(235, 235, 235);
+    }
+
 }
